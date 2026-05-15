@@ -108,7 +108,7 @@ body {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 30px;
 }
 
@@ -147,8 +147,8 @@ body {
 }
 
 .timeline-img img {
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     object-fit: cover;
     border: 1px solid var(--border-color);
 }
@@ -267,6 +267,90 @@ body {
 
 .lang-btn:hover {
     background: var(--accent-blue);
+}
+
+
+.custom-idea-box {
+    margin-top: 60px;
+    transition: transform 0.3s ease;
+}
+.custom-idea-box:hover {
+    transform: scale(1.0);
+}
+
+
+/* Stylizacja wrappera maila */
+.email-wrapper {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#email-address {
+    font-weight: 600;
+    color: var(--white);
+    margin-right: 15px;
+}
+
+#copy-btn {
+    background: none;
+    border: none;
+    color: var(--accent-blue);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+#copy-btn:hover {
+    color: var(--white);
+    transform: scale(1.2);
+}
+
+
+#copy-msg {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%); 
+    bottom: -25px;
+    font-size: 0.75rem;
+    color: var(--accent-blue);
+    font-weight: 600;
+    display: none;
+    white-space: nowrap;
+}
+
+.custom-idea-box #copy-btn {
+    color: var(--accent-blue);
+}
+
+.custom-idea-box #copy-btn:hover {
+    color: var(--primary-blue);
+}
+
+.btn-outline-white {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid var(--white);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-outline-white:hover {
+    background: var(--white);
+    color: var(--primary-blue);
+}
+
+.contact-card p strong {
+    color: var(--accent-blue); 
 }
 
 @media (max-width: 768px) {
