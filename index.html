@@ -3,51 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Informatyczne</title>
+    <title>Portfolio | Rozwiązania Cyfrowe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="lang-pl">
+<body>
 
     <div class="page-wrapper">
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-profile">
-                    <img src="https://via.placeholder.com/40" alt="Profil">
+                    <img src="images/logo1.png" alt="Logo" onerror="this.src='https://via.placeholder.com/50'">
                 </div>
-                <div class="nav-right">
-                    <ul class="nav-links">
-                        <li><a href="index.html#home"><span class="pl">Home</span><span class="en">Home</span></a></li>
-                        <li><a href="index.html#experience"><span class="pl">Doświadczenie</span><span class="en">Experience</span></a></li>
-                        <li><a href="demo.html"><span class="pl">Projekty Demo</span><span class="en">Demo Projects</span></a></li>
-                    </ul>
-                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">O mnie</a></li>
+                    <li><a href="index.html#experience">Doświadczenie</a></li>
+                    <li><a href="demo.html">Przykładowe projekty</a></li>
+                </ul>
             </div>
         </nav>
 
         <header id="home" class="hero section">
-            <div class="container">
-                <h1><span class="pl">O mnie</span><span class="en">About Me</span></h1>
-                <p class="intro-text">
-                    <span class="pl">Jestem programistą specjalizującym się w tworzeniu nowoczesnych rozwiązań cyfrowych. Moje podejście łączy analityczne myślenie z dbałością o detale.</span>
-                    <span class="en">I am a developer specializing in creating modern digital solutions. My approach combines analytical thinking with attention to detail.</span>
-                </p>
+            <div class="container hero-grid-main">
+                <div class="hero-content">
+                    <h1>Narzedzia badawcze <br><span class="highlight">Szybciej. Taniej. Prościej. </span></h1>
+                    <p class="intro-text">
+                        Jestem informatykiem specjalzującym sie w wykorzystywaniu zasobów informatycznych w najrózniejszych badaniach naukowych. Tworzę i modyfikuje miedzy innymi: kwestrionariusze, interwencje, programy do eksperymentów, a także programy wykorzystujące AI. 
+                    </p>
+                </div>
+                <div class="hero-image">
+                    <!-- Placeholder na Twoje zdjęcie lub grafikę -->
+                </div>
             </div>
         </header>
 
         <section class="services section">
             <div class="container">
-                <h2><span class="pl">Dlaczego moje aplikacje do badań?</span><span class="en">Why my research apps?</span></h2>
+                <h2 class="section-title">Dlaczego moje usługi informatyczne?</h2>
                 <div class="services-grid">
                     <div class="service-item">
-                        <h3><span class="pl">Precyzja danych</span><span class="en">Data Precision</span></h3>
-                        <p><span class="pl">Buduję narzędzia, które gwarantują integralność i bezpieczeństwo danych.</span><span class="en">I build tools that guarantee data integrity and security.</span></p>
+                        <h3><i class="fa-solid fa-lightbulb icon-right"></i> Innowacyjność</h3></h3>
+                        <p>Podchodzę do każdego zlecenia indywidualnie - nie stosuję jednego gotowego szablonu dla wszystkich projektów. <strong>Każda aplikacja jest unikalna </strong> i będzie specjlanie napisana dla specyficznych wymogów danego badania.</p>
                     </div>
                     <div class="service-item">
-                        <h3><span class="pl">Intuicyjny UX</span><span class="en">Intuitive UX</span></h3>
-                        <p><span class="pl">Projektuję interfejsy tak, aby proces badawczy był płynny.</span><span class="en">I design interfaces so that the research process is seamless.</span></p>
+                        <h3><i class="fa-solid fa-wallet icon-main"></i> Cena</h3>
+                        <p>W porównaniu z dużymi firmami informatycznymi, za tą samą usługę jestem w stanie zaoferować dużo korzystniejszą ofertę. Podczas gdy duże firmy będą cenić np. stworzenie nowej aplikacji od zera na <strong>dziesiątki czy setki tysięcy</strong> złotych, ja jestem w stanie zaoferować dużo niższą cenę - już od <strong>kilku tysięcy</strong> złotych </p>
+                    </div>
+                    <div class="service-item">
+                        <h3><i class="fa-solid fa-bolt icon-main"></i> Szybkość</h3></h3>
+                        <p>Dzięki wykonywaniu usług jako np. wykonawca zbiorowy w grancie a nie jako firma startująca do przetargu będe w stanie zacząć prace nad projektem dużo szybciej niż konkurencja.</p>
+                        <p>Wykonanie nowej aplikacji od zera zamie około <strong>2 miesięcy</strong> (dla bardziej skomplikowanyuch aplikacji ten czas może być dłuższy).</p>
                     </div>
                 </div>
             </div>
@@ -55,34 +63,99 @@
 
         <section id="experience" class="experience section">
             <div class="container">
-                <h2><span class="pl">Doświadczenie</span><span class="en">Experience</span></h2>
+                <h2 class="section-title">Doświadczenie  </h2>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <div class="timeline-img"><img src="https://via.placeholder.com/60" alt="Logo"></div>
+                        <div class="timeline-img">
+                            <img src="images/duo.png" alt="Firma">
+                        </div>
+                            <div class="timeline-content">
+                            <span class="date">2026</span>
+                            <h3>Tłumaczenie i rozbudowa aplikacji - interwencji psychologicznej </h3>
+                            <p>Rozbudowa i tłumaczenie wielodniowej interwencji psychologicznej </p>
+                            <p>Aplikacja wykonywana do badań wspólnych badań na Uniwersytecie Warszawskim i Uniwersytecie Padewskim </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-img">
+                            <img src="images/padva.png" alt="Firma">
+                        </div>
+                            <div class="timeline-content">
+                            <span class="date">2025</span>
+                            <h3>Stworzenie aplikacji wykorzystującej AI </h3>
+                            <p>Projekt i wykonanie aplikacji badawczej w formie czatu przypominającego naturalną rozmowę. Aplikacja wykorzystuje AI.</p>
+                            <p>Aplikacja wykonywana do badań na Uniwersytecie Padewskim</p>
+                        </div>
+                    </div>
+
+
+                    <div class="timeline-item">
+                        <div class="timeline-img">
+                            <img src="images/logowarszawa.png" alt="Firma">
+                        </div>
+                            <div class="timeline-content">
+                            <span class="date">2024</span>
+                            <h3>Modyfikacja i tłumaczenie procedury </h3>
+                            <p>Przetłumaczenie i modyfikacja procedury do badań na Uniwerytecie Warszawskim </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-img">
+                            <img src="images/logokul.png" alt="Firma">
+                        </div>
+                            <div class="timeline-content">
+                            <span class="date">2023</span>
+                            <h3>Oprawa graficzna i testy aplikacji badawczej</h3>
+                            <p>Testy i wkład w wygląd aplikacji do badań na Katolickim Uniwersytecie Lubelskim. </p>
+
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-img">
+                            <img src="images/gplay.png" alt="Firma">
+                        </div>
                         <div class="timeline-content">
-                            <h3>Full Stack Developer</h3>
-                            <p><span class="pl">Projektowanie systemów zarządzania bazami danych.</span><span class="en">Designing database management systems.</span></p>
+                            <span class="date">od 2020</span>
+                            <h3>Tworzenie gier mobilnych</h3>
+                            <p>Tworzenie i publikowanie gier mobilnych na Google Play Store. </p>
+                            <a href="https://play.google.com/store/apps/dev?id=5700654377016469645" class="advanced-link">
+                                Link do mojej strony w sklepie Google Play Store.
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer class="contact-demo section">
-            <div class="container footer-grid">
-                <div class="contact-card">
-                    <h3><span class="pl">Kontakt</span><span class="en">Contact</span></h3>
-                    <p><span class="pl">Masz pytania?</span><span class="en">Have questions?</span></p>
-                    <a href="mailto:twoj.email@przyklad.pl" class="email-link">twoj.email@przyklad.pl</a>
-                </div>
-                <div class="demo-cta">
-                    <h3><span class="pl">Zobacz możliwości</span><span class="en">See possibilities</span></h3>
-                    <p><span class="pl">Sprawdź interaktywne przykłady aplikacji.</span><span class="en">Check out interactive app examples.</span></p>
-                    <a href="demo.html" class="btn-primary"><span class="pl">Przejdź do Demo</span><span class="en">Go to Demo</span></a>
+
+            <footer class="footer section" id="contact">
+        <div class="container footer-grid">
+            <div class="contact-card">
+                <h3>Szukasz narzędzia informatycznego?</h3>
+                <p>A może dopiero planujesz badanie? W każdym razie napisz do mnie!</p>
+                <p><strong>Bezpłatnie doradzę</strong>, jaką technologię wybrać oraz jak zaplanować optymalne wykorzystanie zasobów informatycznych.</p>
+                <div class="email-wrapper">
+                    <span id="email-address">jg459464@gmail.com</span>
+                    <button onclick="copyEmail()" id="copy-btn" title="Skopiuj adres">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                    <span id="copy-msg">Skopiowano!</span>
                 </div>
             </div>
-        </footer>
+
+            <div class="demo-cta">
+                <h3>Zobacz czym się zajmuje</h3>
+                <p>Przetestuj gotowe przykłady róznych rozwiązań - od tłumaczenia po integrację AI.</p>
+                <a href="demo.html" class="btn-primary">Sprawdź interaktywne przykłady</a>
+            </div>
+        </div>
+    </footer>
+
+
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+
