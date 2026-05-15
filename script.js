@@ -1,3 +1,4 @@
+
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 20) {
@@ -49,3 +50,18 @@ window.addEventListener('scroll', function() {
         navbar.style.boxShadow = 'none';
     }
 });
+
+function copyEmail() {
+    const email = document.getElementById('email-address').innerText;
+    const msg = document.getElementById('copy-msg');
+    
+    navigator.clipboard.writeText(email).then(() => {
+        msg.style.display = 'block';
+        
+        setTimeout(() => {
+            msg.style.display = 'none';
+        }, 2000);
+    }).catch(err => {
+        console.error('Błąd kopiowania: ', err);
+    });
+}
