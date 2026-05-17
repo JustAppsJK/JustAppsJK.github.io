@@ -354,7 +354,21 @@ body {
 }
 
 @media (max-width: 768px) {
-    .nav-container { flex-direction: column; gap: 10px; }
+    /* Ukrywamy całe logo na telefonach */
+    .nav-profile {
+        display: none;
+    }
+
+    /* Centrujemy menu i zmniejszamy padding, aby pasek był bardzo smukły */
+    .nav-container {
+        justify-content: center;
+        padding: 15px 25px; /* Zmniejszone z 15px na 10px */
+    }
+
+    /* Zmniejszamy odstępy między linkami, żeby zmieściły się w jednej linii na szerokość ekranu */
+    .nav-links {
+        gap: 15px; /* Zmniejszone z 30px na 15px */
+    }
 }
 
 @media (max-width: 900px) {
@@ -366,7 +380,6 @@ body {
 
 @media (max-width: 768px) {
     .container { padding: 0 25px; }
-    .nav-container { padding: 15px 25px; }
     .footer-grid { grid-template-columns: 1fr; }
     .timeline { padding-left: 20px; }
     .timeline-img { position: static; margin-right: 20px; margin-bottom: 10px; }
