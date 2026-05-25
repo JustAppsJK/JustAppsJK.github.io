@@ -353,6 +353,39 @@ body {
     color: var(--accent-blue); 
 }
 
+/* Language switcher (dostosowane do istniejącego CSS) */
+.nav-right {
+display: flex;
+align-items: center;
+gap: 16px;
+margin-left: 16px;
+}
+.lang-link {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+background: transparent;
+padding: 4px;
+border-radius: 4px;
+text-decoration: none;
+}
+.lang-link img {
+display: block;
+width: 48px;
+height: 32px;
+object-fit: cover;
+border-radius: 2px;
+border: 1px solid rgba(0,0,0,0.06);
+transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.lang-link:focus, .lang-link:hover {
+transform: translateY(-2px);
+box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+outline: none;
+}
+
+
+
 @media (max-width: 768px) {
     /* Ukrywamy całe logo na telefonach */
     .nav-profile {
